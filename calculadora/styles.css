@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(116, 116, 116);
+  font-family: "Cute Font";
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: black;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.operacoes {
+  background-color: rgba(90, 90, 90, 0.1);
+  border-radius: 8px 8px 0px 0px;
+}
+.buttons-container {
+  display: grid;
+  gap: 1.5px;
+  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(4, 100px);
+}
+.buttons-container button {
+  background-color: rgb(34, 34, 34);
+  border: 1px solid rgb(34, 34, 34);
+  border-radius: 3px;
+}
+.buttons-container button:hover {
+  background-color: rgb(53, 53, 53);
+}
+#equals {
+  grid-column: span 2;
+}
+.operacao-anterior,
+.operacao-atual {
+  font-size: 30px;
+  text-align: right;
+  max-width: 400px;
+  min-height: 40px;
+  overflow-wrap: break-word;
+}
+#ponto {
+  font-weight: 700;
+}
