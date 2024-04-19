@@ -17,7 +17,13 @@ input {
   text-align: center;
   outline: none;
 }
-
+#container-name {
+  position: fixed;
+  left: 44%;
+  top: 515px;
+  font-size: 20px;
+  color: rgb(72, 72, 72);
+}
 #pokedex {
   position: fixed;
   top: 50%;
@@ -25,12 +31,14 @@ input {
   transform: translate(-50%, -50%);
 }
 #pokemon {
-  width: 140px;
+  width: 120px;
   position: fixed;
-  top: 350px;
-  left: 878px;
+  top: 400px;
+  left: 49%;
+  transform: translate(-50%, -50%);
   display: none;
 }
+
 .bnt-search,
 input {
   font-size: 15px;
